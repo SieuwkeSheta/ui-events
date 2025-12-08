@@ -134,3 +134,47 @@ a[href="#design"] {
     translate: 0;
   }
 }
+
+
+/* TranslateX animation on the 'Development' link */
+.translate-x {
+  animation-name: --translate-x;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+}
+
+@keyframes --translate-x {
+  0% {
+    translate: 0;
+  }
+  10% {
+    translate: 1em 0;
+  }
+  20% {
+    translate: -1em 0;
+  }
+  30% {
+    translate: 1em 0;
+  }
+  40% {
+    translate: -1em 0;
+  }
+  50% {
+    translate: 1em 0;
+  }
+  60% {
+    translate: -1em 0;
+  }
+  70% {
+    translate: 1em 0;
+  }
+  80% {
+    translate: -1em 0;
+  }
+  90% {
+    translate: 1em 0;
+  }
+  100% {
+    translate: 0;
+  }
+}
