@@ -38,3 +38,19 @@ function scaleHandler() {
 // Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
 frontendLink.addEventListener('animationend', scaleHandler)
 
+// ____________________ __________________________________________________________________
+
+// Als je op het 3e linkje klikt (&), gaat deze omhoog
+// Stap 1: selecteer het '&'linkje, en sla deze op in een variabele
+const andLink = document.querySelector('a[href="#and"]')
+
+// Stap 2: voeg de (click) event listener toe aan de link, met een callback functie
+andLink.addEventListener('click', translateYHandler)
+
+function translateYHandler() {
+  // Stap 3: toggle een class op het element (zodra er dus op een link wordt geklikt)
+  andLink.classList.toggle('translate-y')
+}
+
+// Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
+andLink.addEventListener('animationend', translateYHandler)
