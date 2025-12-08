@@ -7,6 +7,7 @@ body {
   --secondary: #050840;
   --highlight-primary: #7ce7c9;
   --highlight-secondary: #9d7beb;
+  --done-with-exercise: #eb7be4;
   --radius: 0.5rem;
   --pill: 2rem;
   --line: 0.1rem;
@@ -38,6 +39,14 @@ li {
       border-color: var(--primary);
     }
   }
+}
+
+/* Styling als ik de interactie heb afgerond */
+.done-with-exercise {
+  position: relative;
+  background: var(--done-with-exercise);
+  color: var(--secondary);
+  border-color: var(--secondary);
 }
 
 
