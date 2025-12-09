@@ -92,7 +92,7 @@ sprint5Link.addEventListener('animationend', colorFocusHandler)
 
 
 
-// Als je op het 6e linkje klikt (Fix), veranderd de text naar een emoji van een kat
+// Als je over het 6e linkje hovert (Fix), veranderd de text naar een emoji van een kat
 // Stap 1: selecteer het 'Fix'linkje, en sla deze op in een variabele
 const fixLink = document.querySelector('a[href="#fix"]')
 
