@@ -74,7 +74,7 @@ developmentLink.addEventListener('animationend', translateXHandler)
 
 
 
-// Als je op het 5e linkje klikt (Sprint 5), veranderd deze van kleur
+// Als je op het 5e linkje focust (Sprint 5), veranderd deze van kleur
 // Stap 1: selecteer het 'Sprint 5'linkje, en sla deze op in een variabele
 const sprint5Link = document.querySelector('a[href="#sprint-5"]')
 
