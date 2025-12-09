@@ -111,22 +111,14 @@ a[href="#design"] {
 .translate-y {
   animation-name: --translate-y;
   animation-duration: 1s;
-
 }
 
 @keyframes --translate-y {
-  0% {
-    translate: 0;
-  }
   25% {
     translate:0 -4em;
   }
-
-  75%{
+  75% {
     translate: 0 4em;
-  }
-  100% {
-    translate: 0;
   }
 }
 
