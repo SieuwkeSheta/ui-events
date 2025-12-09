@@ -89,3 +89,24 @@ function colorFocusHandler(){
 
 // Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
 sprint5Link.addEventListener('animationend', colorFocusHandler)
+
+
+
+// Als je op het 6e linkje klikt (Fix), veranderd de text naar een emoji van een kat
+// Stap 1: selecteer het 'Fix'linkje, en sla deze op in een variabele
+const fixLink = document.querySelector('a[href="#fix"]')
+
+// Stap 2: voeg de (mouseover & mouseout) event listener toe aan de link, met een callback functie
+fixLink.addEventListener('mouseover', fixHovered)
+fixLink.addEventListener('mouseout', fixHoveredOut)
+
+function fixHovered() {
+  // Stap 3: Verander de text naar een emoji van een kat (als er met de muis overheen wordt gehovert)
+
+  fixLink.textContent = "🐱"
+}
+
+function fixHoveredOut() {
+    // Stap : Verander de text terug (als de muis er af wordt gehaald)
+  fixLink.textContent = "Fix" 
+}
