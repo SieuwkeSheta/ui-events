@@ -110,3 +110,20 @@ function fixHoveredOut() {
     // Stap : Verander de text terug (als de muis er af wordt gehaald)
   fixLink.textContent = "Fix" 
 }
+
+
+
+// Als je van het 7e linkje af hovert (The), gaat deze draaien over de y-as en x-as
+// Stap 1: selecteer het 'The'linkje, en sla deze op in een variabele
+const theLink = document.querySelector('a[href="#the"]')
+
+// Stap 2: voeg de (mouseout) event listener toe aan de link, met een callback functie
+theLink.addEventListener('mouseout', theHoveredOut)
+
+function theHoveredOut() {
+  // Stap 3: Laat de knop draaien als je er vanaf hovert
+  theLink.classList.toggle('spin')
+}
+
+// Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
+theLink.addEventListener('animationend', theHoveredOut)

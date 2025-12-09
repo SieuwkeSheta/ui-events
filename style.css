@@ -159,3 +159,17 @@ a[href="#design"] {
     background-color: #00FF37;
   }
 }
+
+.spin {
+  animation-name: --spin;
+  animation-duration: 1s;
+}
+
+@keyframes --spin {
+  33% {
+    transform: rotateY(1turn);
+  }
+  66% {
+    transform: rotateX(1turn);
+  }
+}
