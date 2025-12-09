@@ -137,8 +137,25 @@ a[href="#design"] {
   20%, 40%, 60%, 80% {
     translate: -1em 0;
   }
+}
+
+
+/* Background-color animation on the 'Sprint 5' link */
+.color-focus {
+  animation-name: --color-focus;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: 4;
+}
+
+@keyframes --color-focus {
+  25% {
+    background-color: #2ED2FF;
   }
   50% {
+    background-color: #EEFF00;
   }
+  75% {
+    background-color: #00FF37;
   }
 }

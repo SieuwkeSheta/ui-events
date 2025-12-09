@@ -71,3 +71,21 @@ function translateXHandler() {
 
 // Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
 developmentLink.addEventListener('animationend', translateXHandler)
+
+
+
+// Als je op het 5e linkje klikt (Sprint 5), veranderd deze van kleur
+// Stap 1: selecteer het 'Sprint 5'linkje, en sla deze op in een variabele
+const sprint5Link = document.querySelector('a[href="#sprint-5"]')
+
+// Stap 2: voeg de (focus) event listener toe aan de link, met een callback functie
+sprint5Link.addEventListener('focus', colorFocusHandler)
+
+
+function colorFocusHandler(){
+  // Stap 3: toggle een class op het element (zodra er dus op een link wordt geklikt)
+  sprint5Link.classList.toggle('color-focus')
+}
+
+// Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
+sprint5Link.addEventListener('animationend', colorFocusHandler)
