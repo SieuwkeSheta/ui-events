@@ -127,3 +127,19 @@ function theHoveredOut() {
 
 // Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
 theLink.addEventListener('animationend', theHoveredOut)
+
+
+const flowLink = document.querySelector('a[href="#flow"]')
+
+flowLink.addEventListener('mousedown', backFlip)
+flowLink.addEventListener('mouseup', frontFlip)
+
+function backFlip() {
+  flowLink.classList.add('back-flip')
+  flowLink.classList.remove('front-flip')
+}
+
+function frontFlip() {
+  flowLink.classList.remove('back-flip')
+  flowLink.classList.add('front-flip')
+}
