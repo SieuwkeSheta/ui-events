@@ -160,9 +160,11 @@ a[href="#design"] {
   }
 }
 
+
+/* Spin animation on the 'The' link */
 .spin {
   animation-name: --spin;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 @keyframes --spin {
@@ -171,5 +173,9 @@ a[href="#design"] {
   }
   66% {
     transform: rotateX(1turn);
+  }
+  }
+  100% {
+    transform: rotateX(0)
   }
 }
