@@ -129,17 +129,23 @@ function theHoveredOut() {
 theLink.addEventListener('animationend', theHoveredOut)
 
 
+
+// Als je op het 8e linkje klikt (Flow), flipt die 180deg naar achter en als je loslaat flipt ie weer terig
+// Stap 1: selecteer het 'Flow'linkje, en sla deze op in een variabele
 const flowLink = document.querySelector('a[href="#flow"]')
 
+// Stap 2: voeg de (mousedown en mouseup) event listener toe aan de link, met een callback functie
 flowLink.addEventListener('mousedown', backFlip)
 flowLink.addEventListener('mouseup', frontFlip)
 
 function backFlip() {
+  // Stap 3: Laat de knop naar achter flippen als je er op klikt en het vast houdt (door te switchen van classes)
   flowLink.classList.add('back-flip')
   flowLink.classList.remove('front-flip')
 }
 
 function frontFlip() {
+  // Stap 4: Laat de knop terug flippen als je loslaat (door te switchen van classes)
   flowLink.classList.remove('back-flip')
   flowLink.classList.add('front-flip')
 }
