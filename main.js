@@ -149,3 +149,38 @@ function frontFlip() {
   flowLink.classList.remove('back-flip')
   flowLink.classList.add('front-flip')
 }
+
+
+
+// Als je op de knoppen 'r, o, y, g, b, i of v' van het toetsenbord klikt, veranderd het 9e linkje (User) van kleur
+// Stap 1: selecteer het 'User'linkje, en sla deze op in een variabele
+const userLink = document.querySelector('a[href="#user"]')
+
+// Stap 2: voeg de (keyup) event listener toe aan de link, met een callback functie
+userLink.addEventListener('keyup', colorChangeKey)
+
+
+function colorChangeKey(event) {
+    // Stap 3: Laat die specifieke toetsenbord knoppen linken aan een kleur
+  if (event.key === "r") {
+		userLink.style.backgroundColor = "red"
+	}
+  if (event.key === "o") {
+		userLink.style.backgroundColor = "orange"
+	}
+  if (event.key === "y") {
+		userLink.style.backgroundColor = "yellow"
+	}
+  if (event.key === "g") {
+		userLink.style.backgroundColor = "green"
+	}
+  if (event.key === "b") {
+		userLink.style.backgroundColor = "blue"
+	}
+  if (event.key === "i") {
+		userLink.style.backgroundColor = "indigo"
+	}
+  if (event.key === "v") {
+		userLink.style.backgroundColor = "#eb7be4"
+	}
+}
