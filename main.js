@@ -184,3 +184,29 @@ function colorChangeKey(event) {
 		userLink.style.backgroundColor = "#eb7be4"
 	}
 }
+
+// Als je op de knop 'f' van het toetsenbord klikt, blaast het 10e linkje (Interface) als een ballon op en als je het loslaat loopt die leeg
+// Stap 1: selecteer het 'Interface'linkje, en sla deze op in een variabele
+const interfaceLink = document.querySelector('a[href="#interface"]')
+
+// Stap 2: voeg de (keydown en keyup) event listener toe aan de link, met een callback functie
+
+interfaceLink.addEventListener('keydown', blowUpKey)
+interfaceLink.addEventListener('keyup', blowDownKey)
+
+function blowUpKey(event) {
+  // Stap 3: Laat die specifieke toetsenbord knop een class toevoegen aan de link
+
+  if (event.key === "f"){
+    interfaceLink.classList.add('blow-up-key')
+  }
+}
+
+function blowDownKey(event) {
+  // Stap 4: Laat die specifieke toetsenbord knop los om de class te verwijderen van die link
+
+  if (event.key === "f"){
+    interfaceLink.classList.remove('blow-up-key')
+  }
+}
+

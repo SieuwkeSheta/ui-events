@@ -203,3 +203,13 @@ a[href="#design"] {
     transform: rotateX(0)
   }
 }
+
+/* Inflate and deflate animation on the 'Interface' link while clicking on 'f' key*/
+a[href="#interface"] {
+  transition: 1s;
+}
+
+.blow-up-key {
+  scale: 5;
+}
+
